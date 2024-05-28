@@ -1,0 +1,924 @@
+/**
+*
+* Testing
+*
+**/
+@import "./fonts.css";
+.name {
+  color: white;
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .name {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .name {
+    font-size: 1.5rem;
+  }
+}
+
+.discription {
+  color: white;
+}
+
+.aboutP {
+  color: white;
+  margin-top: 3vh;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 80%;
+}
+@media (max-width: 450px) {
+  .aboutP {
+    width: 100%;
+  }
+}
+
+.DownloadCv {
+  background: #439299;
+  border: none;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skill {
+  background: #439299;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  margin: 10px 3px;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.SkillsCircle {
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  top: -5vw;
+  z-index: 1;
+  overflow: hidden;
+  right: -2.2rem;
+}
+.SkillsCircle p {
+  border-radius: 50%;
+  background-color: #439299;
+  opacity: 25%;
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  right: -15vw;
+}
+@media (max-width: 449px) {
+  .SkillsCircle {
+    display: none;
+  }
+}
+
+.SiconContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 450px) {
+  .SiconContainer {
+    margin-top: 1rem;
+  }
+}
+
+.dsflex {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 450px) {
+  .dsflex {
+    flex-direction: column;
+  }
+}
+
+.Sicon {
+  width: 50px;
+}
+.Sicon img {
+  width: 100%;
+}
+@media (max-width: 449px) {
+  .Sicon {
+    margin-top: 0.2rem;
+  }
+}
+
+.experince {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.textContain {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 449px) {
+  .textContain {
+    margin-top: 1rem;
+    height: auto;
+  }
+}
+
+.aboutswiper {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.about-swiper-slide {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.AboutswiperContainer {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding-inline-start: 5vw;
+}
+@media (max-width: 449px) {
+  .AboutswiperContainer {
+    padding-inline-start: 0vw;
+  }
+}
+
+.nameofEx {
+  color: #439299;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.h2 {
+  font-weight: bold;
+}
+
+.EXcard {
+  margin: 1rem;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  width: 40vw;
+  padding: 1.5rem;
+}
+@media (max-width: 450px) {
+  .EXcard {
+    width: 70vw;
+  }
+}
+
+.tasks {
+  font-weight: bold;
+  color: #439299;
+  font-size: 1.1rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.overlayTags {
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .overlayTags .name {
+    margin-top: 0.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .pageContainer {
+    flex-direction: column-reverse;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Plus Jakarta Sans;
+  transition: all 0.5s;
+  accent-color: #439299;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #313c4e;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #439299;
+  border-radius: 2px;
+}
+
+.animate__delay {
+  animation-delay: 0.5s;
+}
+
+button:hover {
+  filter: opacity(0.8);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: white !important;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+@media (max-width: 992px) {
+  .fs-8 {
+    font-size: 1rem;
+  }
+}
+
+.active {
+  position: relative;
+  z-index: 2;
+}
+.active::after {
+  content: " ";
+  left: 0px;
+  bottom: -2px;
+  width: 100%;
+  height: 310%;
+  border-radius: 10px;
+  background: #439299;
+  z-index: -1;
+  position: absolute;
+}
+@media (max-width: 991px) {
+  .active {
+    display: none;
+  }
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: white !important;
+}
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+.navBtn {
+  color: #282015;
+  border-radius: 50px;
+}
+.navBtn:hover {
+  color: white;
+  background-color: #282015;
+}
+
+.nav_img {
+  width: 6vw;
+}
+
+.nav-item a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  aspect-ratio: 16/9;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .header {
+    aspect-ratio: initial;
+    min-height: 60vh;
+  }
+}
+.header video {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.swiper-slide {
+  aspect-ratio: 16/9;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide h2 {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media (max-width: 991px) {
+  .swiper-slide h2 {
+    font-size: 2rem;
+  }
+}
+
+.AboutMe {
+  aspect-ratio: 19/9;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(./imgs/personImage.jpg);
+}
+@media (max-width: 991px) {
+  .AboutMe {
+    aspect-ratio: initial;
+    min-height: 60vh;
+  }
+}
+.AboutMe .bluredBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  width: 33.33%;
+  margin-right: 3rem;
+  background: rgba(0, 0, 0, 0.53);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  height: 100%;
+  float: right;
+}
+@media (max-width: 991px) {
+  .AboutMe .bluredBlock {
+    width: 50%;
+    justify-content: space-evenly;
+    min-height: 60vh;
+  }
+}
+@media (max-width: 449px) {
+  .AboutMe .bluredBlock {
+    width: 80%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.AboutMe .bluredBlock h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.AboutMe .bluredBlock p {
+  color: white;
+  font-size: 1.5rem;
+}
+@media (max-width: 991px) {
+  .AboutMe .bluredBlock p {
+    font-size: 1rem;
+  }
+}
+
+.MyWork {
+  text-align: center;
+  padding: 5vh 0vw;
+}
+.MyWork h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+@media (max-width: 449px) {
+  .MyWork h2 {
+    font-size: 2rem;
+  }
+}
+.MyWork p {
+  color: white;
+  font-size: 1rem;
+}
+.MyWork .MyWorkSwiper {
+  width: 100%;
+}
+.MyWork .MyWorkSwiper .swiper-slide-active {
+  position: relative;
+}
+.MyWork .MyWorkSwiper .swiper-slide-active::after {
+  content: " ";
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: url("../imgs/MusicDisc.png") center/contain no-repeat;
+  transition: left 0.5s;
+  z-index: -1;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.8156862745));
+}
+@media (max-width: 449px) {
+  .MyWork .MyWorkSwiper .swiper-slide-active::after {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+.MyWork .MyWorkSwiper .swiper-slide-active:hover::after {
+  left: -13vw; /* Move the pseudo-element when the parent is hovered */
+}
+@media (max-width: 449px) {
+  .MyWork .MyWorkSwiper .swiper-slide-active:hover::after {
+    left: -20vw;
+  }
+}
+.MyWork .MyWorkSwiper .swiper-slide-active.rotate::after {
+  animation: rotate 6s linear infinite;
+}
+.MyWork .MyWorkSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  border-radius: 5px;
+}
+@media (max-width: 449px) {
+  .MyWork .MyWorkSwiper .swiper-slide {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+.MyWork .MyWorkSwiper .swiper-slide .bg {
+  width: 30vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 449px) {
+  .MyWork .MyWorkSwiper .swiper-slide .bg {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+.MyWork .MyWorkSwiper .swiper-slide .audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.MyWork .MyWorkSwiper .swiper-slide .progress-bar {
+  width: 30vw;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 0.7725490196);
+  overflow: hidden;
+  cursor: pointer;
+}
+@media (max-width: 449px) {
+  .MyWork .MyWorkSwiper .swiper-slide .progress-bar {
+    width: 50vw;
+  }
+}
+.MyWork .MyWorkSwiper .swiper-slide .progress {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6784313725);
+  width: 0;
+  position: relative;
+}
+.MyWork .MyWorkSwiper .swiper-slide .play-button {
+  aspect-ratio: 4/4;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  background-color: rgba(230, 230, 230, 0.5137254902);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  aspect-ratio: 4/4;
+  position: absolute;
+}
+@media (max-width: 449px) {
+  .MyWork .MyWorkSwiper .swiper-slide .play-button {
+    width: 5vw;
+  }
+}
+.MyWork .MyWorkSwiper .swiper-slide .play-button:hover {
+  background: rgba(255, 255, 255, 0.6352941176);
+}
+.MyWork .MyWorkSwiper .swiper-slide .play-button img {
+  width: 50%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.background {
+  background: url("../imgs/myWorkBg.png") center/cover no-repeat;
+}
+
+.musicVedio {
+  margin-top: 5rem;
+}
+.musicVedio .swiper-slide-active::after {
+  content: none !important;
+}
+.musicVedio .swiper-slide {
+  width: 40vw;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+@media (max-width: 449px) {
+  .musicVedio .swiper-slide {
+    width: 50vw;
+  }
+}
+.musicVedio .swiper-slide::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.3568627451);
+}
+.musicVedio .swiper-slide iframe,
+.musicVedio .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+@media (max-width: 449px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.Partners {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.partner-logo {
+  width: 10vw;
+  height: 10vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 449px) {
+  .partner-logo {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+.projects h2 {
+  color: #282015;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+@media (max-width: 449px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+}
+.projects .projectsSwiper {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.projects .projectsSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6e8c9;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  height: 80vh;
+}
+@media (max-width: 991px) {
+  .projects .projectsSwiper .swiper-slide {
+    height: 50vh;
+  }
+}
+
+.SERVICES {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+.SERVICES h2 {
+  color: #282015;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: rem;
+}
+@media (max-width: 449px) {
+  .SERVICES h2 {
+    font-size: 2rem;
+  }
+}
+.SERVICES .swiper {
+  width: 100%;
+  height: 70vh;
+}
+.SERVICES .swiper-slide {
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+.SERVICES .swiper-slide .front,
+.SERVICES .swiper-slide .back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 1s ease-in-out;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.SERVICES .swiper-slide .back {
+  opacity: 0;
+  padding: 1rem;
+}
+.SERVICES .swiper-slide .back p {
+  text-align: center;
+}
+.SERVICES .swiper-slide:hover {
+  transition: all 0.5s ease-in-out;
+}
+.SERVICES .swiper-slide:hover .back {
+  opacity: 1;
+}
+.SERVICES .swiper-slide:hover .front {
+  opacity: 0;
+}
+.SERVICES .swiper-slide .whiteShade {
+  background: rgba(255, 255, 255, 0.368627451);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.SERVICES .swiper-slide::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.SERVICES .swiper-slide .title {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.SERVICES .swiper-slide .icon {
+  width: 30%;
+  height: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 1rem;
+}
+.SERVICES .swiper-slide .bg {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.priceList {
+  height: 60vh;
+  background: url("../imgs/order price list.png") center/cover no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5vw 5vw;
+  position: relative;
+  margin-top: 5rem;
+}
+@media (max-width: 991px) {
+  .priceList {
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+.priceList a {
+  background: #282015;
+  color: white;
+  transition: all 0.3s;
+  border-radius: 50px;
+  padding: 10px 100px;
+  border: none;
+  outline: none;
+  font-weight: light;
+  font-size: 2rem;
+}
+.priceList a:hover {
+  transition: all 0.3s;
+  background: white;
+  color: #282015;
+}
+@media (max-width: 449px) {
+  .priceList a {
+    padding: 10px 30px;
+  }
+}
+.priceList .text {
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .priceList .text {
+    height: auto;
+  }
+}
+.priceList .text h3 {
+  color: #282015;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media (max-width: 449px) {
+  .priceList .text h3 {
+    font-size: 2.5rem;
+  }
+}
+.priceList .text h5 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: light;
+  color: #282015;
+}
+@media (max-width: 449px) {
+  .priceList .text h5 {
+    font-size: 2rem;
+  }
+}
+
+.contactUs {
+  background: url("../imgs//image (6).jpg") center/cover no-repeat;
+  position: relative;
+  padding: 5vw;
+}
+.contactUs h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+@media (max-width: 449px) {
+  .contactUs h3 {
+    font-size: 2rem;
+  }
+}
+.contactUs p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.contactUs .bg {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.712);
+}
+.contactUs .submitBtn {
+  background: #282015;
+  color: white;
+  border-radius: 14px;
+  margin-top: 1.3rem;
+  width: 100%;
+}
+.contactUs input,
+.contactUs textarea {
+  border-radius: 14px;
+  margin-top: 1.2em;
+  padding: 0.5rem 1rem;
+}
+.contactUs textarea {
+  padding: 1rem;
+}
+.contactUs .map {
+  height: 60vh;
+  border-radius: 10px;
+  width: 90vw !important;
+}
+
+footer {
+  background: white;
+  padding: 5vw;
+}
+footer .socialIcons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+footer .socialIcons a {
+  text-decoration: none;
+  padding: 5px;
+  background: rgba(129, 113, 90, 0.26);
+  border-radius: 5px;
+}
+footer .socialIcons a img {
+  width: 30px;
+}
+footer .socialIcons a:hover {
+  filter: invert(1);
+  background: #a1b9c2;
+}
+footer .logo {
+  width: 10vw;
+}
+footer .links a {
+  color: #282015;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+footer .email {
+  color: #282015;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+footer .email:hover {
+  border-bottom: 1px solid;
+}
+
+.mySwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

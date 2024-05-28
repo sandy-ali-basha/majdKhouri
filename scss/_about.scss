@@ -1,0 +1,165 @@
+.name {
+  color: white;
+  font-size: 3.3rem;
+  font-weight: bold;
+  @include media(">phone", "<=tablet") {
+    font-size: 2rem;
+  }
+  @include media("<=phone") {
+    font-size: 1.5rem;
+  }
+}
+.discription {
+  color: white;
+}
+.aboutP {
+  color: white;
+  margin-top: 3vh;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 80%;
+  @include media("<=phone") {
+    width: 100%;
+  }
+}
+.DownloadCv {
+  background: $green_primary;
+  border: none;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.skill {
+  background: $green_primary;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  margin: 10px 3px;
+}
+.z-1 {
+  z-index: 1;
+}
+
+.SkillsCircle {
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  top: -5vw;
+  z-index: 1;
+  overflow: hidden;
+  // background-color: rebeccapurple;
+  right: -2.2rem;
+  p {
+    border-radius: 50%;
+    background-color: $green_primary;
+    opacity: 25%;
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    right: -15vw;
+  }
+  @include media("<phone") {
+    display: none;
+  }
+}
+.SiconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  @include media("<=phone") {
+    margin-top: 1rem;
+  }
+}
+.dsflex {
+  display: flex;
+  flex-direction: row;
+  @include media("<=phone") {
+    flex-direction: column;
+  }
+}
+.Sicon {
+  width: 50px;
+
+  img {
+    width: 100%;
+  }
+  @include media("<phone") {
+    margin-top: 0.2rem;
+  }
+}
+.experince {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+.textContain {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include media("<phone") {
+    margin-top: 1rem;
+    height: auto;
+  }
+}
+.aboutswiper {
+  height: fit-content;
+  width: 100%;
+}
+.about-swiper-slide {
+  width: fit-content !important;
+}
+.AboutswiperContainer {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding-inline-start: 5vw;
+  @include media("<phone") {
+    padding-inline-start: 0vw;
+  }
+}
+.nameofEx {
+  color: $green_primary;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.h2 {
+  font-weight: bold;
+}
+.EXcard {
+  margin: 1rem;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  width: 40vw;
+  padding: 1.5rem;
+  @include media("<=phone") {
+    width: 70vw;
+  }
+}
+.tasks {
+  font-weight: bold;
+  color: $green_primary;
+  font-size: 1.1rem;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.overlayTags {
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  .name {
+    @include media("<=tablet") {
+      margin-top: 0.3rem;
+    }
+  }
+}
+.pageContainer {
+  @include media("<=phone") {
+    flex-direction: column-reverse;
+  }
+}

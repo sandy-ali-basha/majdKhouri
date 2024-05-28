@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for social media sharing links  -->
+    <meta name="theme-color" content="#439299" />
+    <meta property="og:description" content="description" />
+    <meta property="og:title" content="IT Developers" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="website link" />
+    <meta property="og:image" content="website image" />
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- scss -->
+    <link rel="stylesheet" href="./scss/main.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animate css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>E.IT.Developers</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-md-5 px-0">
+        <ul class="navbar-nav flex-row mx-auto" id="navbarUL">
+          <li class="nav-item">
+            <a class="nav-link navBtn mx-1 mx-md-2" href="#partner">PARTNERS</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link navBtn mx-1 mx-md-2" href="#contactMe"
+              >contact me</a
+            >
+          </li>
+        </ul>
+        <a class="navbar-brand">
+          <img loading="lazy" class="nav_img" src="./imgs/logo.svg" alt="" />
+        </a>
+
+        <ul class="navbar-nav mx-auto" id="navbarUL">
+          <li class="nav-item">
+            <a class="nav-link navBtn mx-1 mx-md-2" href="#services"
+              >SERVICES</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link navBtn mx-1 mx-md-2" href="#works">Works</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <video autoplay>
+        <source src="./vedio/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="swiper mySwiper" id="header">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h2>SOUND PRODUCTIONS</h2>
+          </div>
+          <div class="swiper-slide">
+            <h2>CTIONS</h2>
+          </div>
+          <div class="swiper-slide">
+            <h2>music</h2>
+          </div>
+          <div class="swiper-slide">
+            <h2>Sdl</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="AboutMe"
+      style="background: url(./imgs/personImage.jpg) fixed center/cover no-repeat;"
+    >
+      <div class="bluredBlock">
+        <h1 class="title">Majd Khouri.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem
+          enim sint quaerat odio numquam quas pariatur. Maxime odit voluptates
+          minus facere sapiente dolorum quia debitis dolorem, ducimus dolore
+          reiciendis.
+        </p>
+      </div>
+    </section>
+    <div class="background">
+      <section class="MyWork">
+        <h2>My work</h2>
+        <p>Some quotes from our happy customers</p>
+        <div class="swiper MyWorkSwiper mt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (2).jpg" />
+              <audio id="audio">
+                <source src="./sound/sound.MP3" type="audio/mp3" />
+                Your browser does not support the audio element.
+              </audio>
+              <div class="play-button">
+                <img
+                  class="btnPause"
+                  style="display: none;"
+                  src="./imgs/pause.png"
+                  alt=""
+                />
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+              <div class="audio-player">
+                <div class="progress-bar" id="progress-bar">
+                  <div class="progress" id="progress"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (3).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (4).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (5).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (6).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (7).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (8).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (9).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="bg" src="./imgs/image (10).jpg" />
+              <div class="play-button">
+                <img class="btnPlay" src="./imgs/play.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="musicVedio">
+        <h2 class="title">Music videos</h2>
+        <div class="swiper MusicVediosSwiper mt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe
+                src="https://www.youtube.com/embed/oyQq80bBRdM"
+                title="أوّل ما اجت فرصه علّا وطار .. #ضحى_بيه"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe
+                src="https://www.youtube.com/embed/oyQq80bBRdM"
+                title="أوّل ما اجت فرصه علّا وطار .. #ضحى_بيه"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="Partners px-2 px-md-5">
+        <h2 class="title pb-5">Partners of success</h2>
+        <div
+          class="d-flex justify-content-center align-items-center gap-5 flex-wrap px-2 px-md-5"
+        >
+          <img src="./imgs/logos/logo (1).png" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (2).png" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (4).svg" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (5).svg" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (1).webp" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (3).png" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (4).png" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (1).svg" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (2).svg" class="partner-logo" alt="" />
+          <img src="./imgs/logos/logo (3).svg" class="partner-logo" alt="" />
+        </div>
+      </section>
+    </div>
+    <section class="projects px-2 px-md-5">
+      <h2>PROJECTS</h2>
+      <div class="swiper projectsSwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background: url(./imgs/image\ \(11\).jpg);"
+          >
+            SOUND EFFECTS
+          </div>
+          <div
+            class="swiper-slide"
+            style="background: url(./imgs/image\ \(2\).jpg);"
+          >
+            DOUBLAGE
+          </div>
+          <div
+            class="swiper-slide"
+            style="background: url(./imgs/image\ \(5\).jpg);"
+          >
+            DOUBLAGE
+          </div>
+          <div
+            class="swiper-slide"
+            style="background: url(./imgs/image\ \(3\).jpg);"
+          >
+            Slide
+          </div>
+          <div
+            class="swiper-slide"
+            style="background: url(./imgs/image\ \(11\).jpg);"
+          >
+            Slide
+          </div>
+          <div
+            class="swiper-slide"
+            style="background: url(./imgs/image\ \(11\).jpg);"
+          >
+            Slide
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="priceList">
+      <div class="text">
+        <h3>order price list</h3>
+        <h5>Now</h5>
+      </div>
+      <a href="mailto:">let's fly togather</a>
+    </section>
+    <section class="SERVICES px-5">
+      <h2>SERVICES</h2>
+      <div class="swiper SERVICESSwiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./imgs/image (2).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (7).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (6).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (2).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (3).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (3).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (4).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (4).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (6).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (2).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (3).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (3).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (4).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (4).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (6).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (2).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (3).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (3).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (4).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/image (4).jpg" class="bg" alt="image" />
+            <div class="whiteShade"></div>
+            <div class="front">
+              <img src="./imgs/svg/icon (1).png" class="icon" alt="icon" />
+              <p class="title">service</p>
+            </div>
+            <div class="back">
+              <p class="title">service</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                est harum molestiae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" contactUs">
+      <div class="bg"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Talk With Me</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, totam
+            tempora! Sapiente cumque quia odit veritatis vitae necessitatibus
+            aspernatur laborum.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <form class="ps-0 ps-md-5 ">
+            <div class="d-flex gap-2">
+              <div class="form-group w-50">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group w-50">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="what's in your mind ?"
+                class="form-control w-100"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn submitBtn">SEND</button>
+          </form>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2874.5504357715945!2d-78.95245527560424!3d43.90657697109125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51f509ec67437%3A0xbe781666f5062b65!2sDr.%20Majd%20Khouri!5e0!3m2!1sar!2seg!4v1716913229873!5m2!1sar!2seg"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="mt-5 map"
+      ></iframe>
+    </section>
+    <footer
+      class="d-flex justify-content-center align-items-center flex-column gap-5"
+    >
+      <div class="gap-2 socialIcons">
+        <div>Follow me</div>
+
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          ><img src="./imgs/icons/facebook.png" alt=""
+        /></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          ><img src="./imgs/icons/instagram.png" alt=""
+        /></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          ><img src="./imgs/icons/spotify.png" alt=""
+        /></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          ><img src="./imgs/icons/youtube.png" alt=""
+        /></a>
+      </div>
+      <img src="./imgs/logo.svg" alt="" class="logo" />
+      <a class="email" href="mailto:majd.khouri@gmail.com"
+        >majd.khouri@gmail.com</a
+      >
+      <div class="d-flex gap-3 links">
+        <a class="mx-2" href="#partner">PARTNERS</a>
+        <a class="mx-2" href="#contactMe">contact me</a>
+
+        <a class="mx-2" href="#services">SERVICES</a>
+
+        <a class="mx-2" href="#works">Works</a>
+      </div>
+    </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animated image in header  -->
+    <script type="text/javascript"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- filters  -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script src="./js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const OurTeam = new Swiper("#header", {
+        // Optional parameters
+        slidesPerView: "1",
+        effect: "flip",
+
+        spaceBetween: 0,
+        lazy: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      });
+    </script>
+
+    <script>
+        const playButton = document.querySelector('.play-button');
+
+        const audio = document.getElementById('audio');
+        const progressBar = document.getElementById('progress-bar');
+        const progress = document.getElementById('progress');
+
+        const play = document.querySelector(".btnPlay")
+        const pause= document.querySelector(".btnPause")
+
+        playButton.addEventListener('click', () => {
+
+        const swiperSlide = document.querySelector('.MyWorkSwiper .swiper-slide-active');
+        if (audio.paused) {
+                audio.play();
+                play.style.display = 'none';
+                pause.style.display = 'block';
+                swiperSlide.classList.add('rotate');
+            } else {
+                audio.pause();
+                pause.style.display = 'none';
+                play.style.display = 'block';
+                swiperSlide.classList.remove('rotate');
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+
+            const percentage = (audio.currentTime / audio.duration) * 100;
+            progress.style.width = percentage + '%';
+        });
+
+        progressBar.addEventListener('click', (e) => {
+            const clickX = e.offsetX;
+            const width = progressBar.clientWidth;
+            const duration = audio.duration;
+
+            audio.currentTime = (clickX / width) * duration;
+        });
+
+        audio.addEventListener('ended', function() {
+
+        const swiperSlide = document.querySelector('.MyWorkSwiper .swiper-slide-active');
+        swiperSlide.classList.remove('rotate');
+        playButton.style.display = 'block';
+        pauseButton.style.display = 'none';
+      });
+    </script>
+    <script>
+        var swiper = new Swiper(".MyWorkSwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+
+      });
+    </script>
+    <!-- //* MusicVediosSwiper -->
+    <script>
+      var swiper = new Swiper(".MusicVediosSwiper", {
+             effect: "coverflow",
+             grabCursor: false,
+             centeredSlides: true,
+             slidesPerView: "auto",
+             coverflowEffect: {
+               rotate: 50,
+               stretch: 0,
+               depth: 100,
+               modifier: 1,
+               slideShadows: true,
+             },
+        grabCursor: true,
+
+             navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+           });
+    </script>
+    <script>
+                  var swiper = new Swiper(".projectsSwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        spaceBetween: 20,
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 499px
+          499: {
+            slidesPerView: 2,
+
+          },
+          // when window width is <= 999px
+          999: {
+            slidesPerView: 3,
+
+          },
+        },
+      });
+    </script>
+    <script>
+           document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper('.SERVICESSwiper', {
+
+          // autoplay:true,
+          grid: {
+        rows: 2,
+      },
+          spaceBetween: 30,
+          breakpoints: {
+          // when window width is <= 499px
+          499: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is <= 999px
+          999: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        });
+      });
+    </script>
+  </body>
+</html>
