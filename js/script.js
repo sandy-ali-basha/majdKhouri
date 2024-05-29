@@ -87,10 +87,10 @@ var swiper = new Swiper(".MusicVediosSwiper", {
   },
   grabCursor: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
 });
 
 var swiper = new Swiper(".projectsSwiper", {
@@ -118,6 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // autoplay:true,
     grid: {
       rows: 2,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
     spaceBetween: 30,
     breakpoints: {

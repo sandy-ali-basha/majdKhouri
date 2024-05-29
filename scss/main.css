@@ -860,8 +860,11 @@ body {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: -1;
+  z-index: 0;
   background: rgba(255, 255, 255, 0.712);
+}
+.contactUs iframe {
+  position: relative;
 }
 .contactUs .submitBtn {
   background: #282015;
@@ -929,6 +932,11 @@ footer .email:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 449px) {
+  .mySwiper .swiper-slide {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 449px) {

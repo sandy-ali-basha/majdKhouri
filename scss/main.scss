@@ -576,8 +576,11 @@ body {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: -1;
+    z-index: 0;
     background: rgba(255, 255, 255, 0.712);
+  }
+  iframe {
+    position: relative;
   }
   .submitBtn {
     background: $text_primary;
@@ -649,6 +652,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media("<phone") {
+      height: 100vh;
+    }
   }
 }
 .links {
