@@ -502,6 +502,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
+    gap: 30px;
   }
   a {
     background: $text_primary;
@@ -519,6 +520,7 @@ body {
     font-weight: light;
     font-size: 2rem;
     @include media("<phone") {
+      font-size: 1rem;
       padding: 10px 30px;
     }
   }
