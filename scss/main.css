@@ -832,6 +832,11 @@ body {
   position: relative;
   padding: 5vw;
 }
+@media (max-width: 449px) {
+  .contactUs {
+    padding-top: 10vh;
+  }
+}
 .contactUs h3 {
   font-weight: bold;
   text-transform: uppercase;
@@ -886,6 +891,7 @@ footer .socialIcons {
   align-items: center;
   justify-content: center;
   display: flex;
+  gap: 0.5rem;
 }
 footer .socialIcons a {
   text-decoration: none;
@@ -921,4 +927,12 @@ footer .email:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 449px) {
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=main.css.map */

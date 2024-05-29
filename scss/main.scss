@@ -552,6 +552,9 @@ body {
   background: url("../imgs//image\ \(6\).jpg") center/cover no-repeat;
   position: relative;
   padding: 5vw;
+  @include media("<phone") {
+    padding-top: 10vh;
+  }
   h3 {
     font-weight: bold;
     text-transform: uppercase;
@@ -596,13 +599,16 @@ body {
     width: 90vw !important;
   }
 }
+
 footer {
   background: white;
   padding: 5vw;
+
   .socialIcons {
     align-items: center;
     justify-content: center;
     display: flex;
+    gap: 0.5rem;
     a {
       text-decoration: none;
       padding: 5px;
@@ -641,5 +647,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+.links {
+  @include media("<phone") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
