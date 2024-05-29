@@ -64,6 +64,7 @@ var swiper = new Swiper(".MyWorkSwiper", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  autoplay: true,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -86,7 +87,7 @@ var swiper = new Swiper(".MusicVediosSwiper", {
     slideShadows: true,
   },
   grabCursor: true,
-
+  autoplay: true,
   //   navigation: {
   //     nextEl: ".swiper-button-next",
   //     prevEl: ".swiper-button-prev",
@@ -99,6 +100,7 @@ var swiper = new Swiper(".projectsSwiper", {
     clickable: true,
   },
   spaceBetween: 20,
+  autoplay: true,
 
   // Responsive breakpoints
   breakpoints: {
@@ -115,7 +117,7 @@ var swiper = new Swiper(".projectsSwiper", {
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".SERVICESSwiper", {
-    // autoplay:true,
+    autoplay: true,
     grid: {
       rows: 2,
     },
