@@ -1,5 +1,4 @@
 const OurTeam = new Swiper("#header", {
-  // Optional parameters
   slidesPerView: "1",
   effect: "flip",
 
@@ -88,10 +87,6 @@ var swiper = new Swiper(".MusicVediosSwiper", {
   },
   grabCursor: true,
   autoplay: true,
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
 });
 
 var swiper = new Swiper(".projectsSwiper", {
@@ -138,5 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 30,
       },
     },
+  });
+  $(".darkModeButton").on("click", () => {
+    $(".light").toggleClass("show");
+    $(".dark").toggleClass("hide");
+    $("body").toggleClass("darkMode");
   });
 });

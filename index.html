@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- for social media sharing links  -->
-    <meta name="theme-color" content="#439299" />
+    <meta name="theme-color" content="#ab8d60" />
     <meta property="og:description" content="description" />
     <meta property="og:title" content="majd khouri" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="website link" />
     <meta property="og:image" content="website image" />
+    <link rel="shortcut icon" href="./imgs/logo.svg" type="image/x-icon" />
     <!-- bootstrap  -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,20 +21,15 @@
     <link rel="stylesheet" href="./scss/main.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- animate css  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <!-- swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <title>Majd Khouri</title>
   </head>
   <body>
+    <!--//* nav  -->
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand d-md-none d-block">
         <img
@@ -63,9 +59,6 @@
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <div
-          class="container-fluid flex-md-row align-items-center d-flex px-md-5 px-0"
-        > -->
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link navBtn mx-1 mx-md-2" href="#partner">PARTNERS</a>
@@ -94,10 +87,14 @@
           <li class="nav-item">
             <a class="nav-link navBtn mx-1 mx-md-2" href="#works">Works</a>
           </li>
+          <button class="darkModeButton">
+            <img class="light" src="./imgs/icons/light-mode.png" alt="" />
+            <img class="dark" src="./imgs/icons/dark-mode.png" alt="" />
+          </button>
         </ul>
-        <!-- </div> -->
       </div>
     </nav>
+    <!-- //*header  -->
     <header class="header">
       <video autoplay loop poster="./imgs/thumbnail.png">
         <source src="./vedio/bg.mp4" type="video/mp4" />
@@ -120,6 +117,7 @@
         </div>
       </div>
     </header>
+    <!--//* AboutMe -->
     <section
       class="AboutMe"
       style="background: url(./imgs/personImage.jpg) fixed center/cover no-repeat;"
@@ -134,6 +132,7 @@
         </p>
       </div>
     </section>
+    <!-- //* MyWork -->
     <div class="background">
       <section class="MyWork">
         <h2 data-aos="fade-in">My work</h2>
@@ -363,6 +362,7 @@
         </div>
       </section>
     </div>
+    <!-- projects -->
     <section class="projects px-2 px-md-5">
       <h2 data-aos="fade-in">PROJECTS</h2>
       <div class="swiper projectsSwiper">
@@ -407,6 +407,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- priceList -->
     <section class="priceList">
       <div class="text">
         <h3 data-aos="flip-up">order price list</h3>
@@ -414,6 +415,7 @@
       </div>
       <a href="mailto:">let's fly togather</a>
     </section>
+    <!-- SERVICES -->
     <section class="SERVICES px-5">
       <h2 data-aos="fade-in">SERVICES</h2>
       <div class="swiper SERVICESSwiper mt-5 pb-5">
@@ -772,6 +774,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- contactUs -->
     <section class=" contactUs">
       <div class="bg"></div>
       <div class="row">
@@ -835,6 +838,7 @@
         class="mt-5 map"
       ></iframe>
     </section>
+    <!-- footer  -->
     <footer
       class="d-flex justify-content-around justify-content-md-center h-md-auto h-50 align-items-center flex-column "
     >
@@ -871,9 +875,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- animated image in header  -->
-    <script type="text/javascript"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -885,12 +886,8 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <!-- filters  -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="./js/script.js"></script>
   </body>
 </html>

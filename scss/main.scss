@@ -7,6 +7,24 @@
   transition: all 0.5s;
   accent-color: $brown;
 }
+.darkModeButton {
+  background: none;
+  border: none;
+  outline: none;
+  img {
+    width: 30px;
+  }
+  .light {
+    display: none;
+  }
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,6 +37,72 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: $brown;
   border-radius: 2px;
+}
+.darkMode {
+  background: $text_primary;
+  .priceList {
+    h3,
+    h5 {
+      color: $white !important;
+    }
+    a {
+      background: $white;
+      color: $text_primary;
+      &:hover {
+        transition: all 0.3s;
+        color: $white;
+        background: $text_primary;
+      }
+    }
+  }
+  .navbar {
+    background: $text_primary !important;
+    img {
+      filter: invert(1);
+    }
+  }
+  .navBtn {
+    color: $white;
+    &:hover {
+      color: $text_primary;
+      background-color: $white;
+    }
+  }
+  .projects {
+    background: $text_primary;
+    h2 {
+      color: $white;
+    }
+    .swiper-slide {
+      color: $white;
+    }
+  }
+  .SERVICES {
+    background: $text_primary;
+    h2 {
+      color: $white;
+    }
+  }
+  .form-control {
+    background: $text_primary;
+    color: $white;
+    border: none;
+  }
+  input,
+  textarea {
+    &::placeholder {
+      color: rgba($white, 0.8);
+    }
+  }
+  footer {
+    background: $text_primary;
+    * {
+      color: $white !important;
+    }
+    img {
+      filter: invert(1);
+    }
+  }
 }
 .animate__delay {
   animation-delay: 0.5s;
@@ -414,7 +498,6 @@ body {
     }
     .back {
       opacity: 0;
-
       padding: 1rem;
       p {
         text-align: center;
@@ -436,6 +519,7 @@ body {
       height: 100%;
       position: absolute;
       z-index: -1;
+      border-radius: 10px;
     }
     &::before {
       position: absolute;

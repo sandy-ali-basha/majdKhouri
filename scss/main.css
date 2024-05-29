@@ -13,6 +13,26 @@
   accent-color: #ab8d60;
 }
 
+.darkModeButton {
+  background: none;
+  border: none;
+  outline: none;
+}
+.darkModeButton img {
+  width: 30px;
+}
+.darkModeButton .light {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -28,6 +48,72 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: #ab8d60;
   border-radius: 2px;
+}
+
+.darkMode {
+  background: #282015;
+}
+.darkMode .priceList h3,
+.darkMode .priceList h5 {
+  color: #fffcf6 !important;
+}
+.darkMode .priceList a {
+  background: #fffcf6;
+  color: #282015;
+}
+.darkMode .priceList a:hover {
+  transition: all 0.3s;
+  color: #fffcf6;
+  background: #282015;
+}
+.darkMode .navbar {
+  background: #282015 !important;
+}
+.darkMode .navbar img {
+  filter: invert(1);
+}
+.darkMode .navBtn {
+  color: #fffcf6;
+}
+.darkMode .navBtn:hover {
+  color: #282015;
+  background-color: #fffcf6;
+}
+.darkMode .projects {
+  background: #282015;
+}
+.darkMode .projects h2 {
+  color: #fffcf6;
+}
+.darkMode .projects .swiper-slide {
+  color: #fffcf6;
+}
+.darkMode .SERVICES {
+  background: #282015;
+}
+.darkMode .SERVICES h2 {
+  color: #fffcf6;
+}
+.darkMode .form-control {
+  background: #282015;
+  color: #fffcf6;
+  border: none;
+}
+.darkMode input::-moz-placeholder, .darkMode textarea::-moz-placeholder {
+  color: rgba(255, 252, 246, 0.8);
+}
+.darkMode input::placeholder,
+.darkMode textarea::placeholder {
+  color: rgba(255, 252, 246, 0.8);
+}
+.darkMode footer {
+  background: #282015;
+}
+.darkMode footer * {
+  color: #fffcf6 !important;
+}
+.darkMode footer img {
+  filter: invert(1);
 }
 
 .animate__delay {
@@ -494,6 +580,7 @@ body {
   height: 100%;
   position: absolute;
   z-index: -1;
+  border-radius: 10px;
 }
 .SERVICES .swiper-slide::before {
   position: absolute;
