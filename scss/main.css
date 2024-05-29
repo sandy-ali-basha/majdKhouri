@@ -4,218 +4,13 @@
 *
 **/
 @import "./fonts.css";
-.name {
-  color: white;
-  font-size: 3.3rem;
-  font-weight: bold;
-}
-@media (min-width: 451px) and (max-width: 992px) {
-  .name {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 450px) {
-  .name {
-    font-size: 1.5rem;
-  }
-}
-
-.discription {
-  color: white;
-}
-
-.aboutP {
-  color: white;
-  margin-top: 3vh;
-  font-weight: bold;
-  font-size: 0.9rem;
-  width: 80%;
-}
-@media (max-width: 450px) {
-  .aboutP {
-    width: 100%;
-  }
-}
-
-.DownloadCv {
-  background: #439299;
-  border: none;
-  outline: none;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.skill {
-  background: #439299;
-  padding: 15px 20px;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  margin: 10px 3px;
-}
-
-.z-1 {
-  z-index: 1;
-}
-
-.SkillsCircle {
-  width: 30vw;
-  height: 30vw;
-  position: absolute;
-  top: -5vw;
-  z-index: 1;
-  overflow: hidden;
-  right: -2.2rem;
-}
-.SkillsCircle p {
-  border-radius: 50%;
-  background-color: #439299;
-  opacity: 25%;
-  width: 30vw;
-  height: 30vw;
-  position: absolute;
-  right: -15vw;
-}
-@media (max-width: 449px) {
-  .SkillsCircle {
-    display: none;
-  }
-}
-
-.SiconContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (max-width: 450px) {
-  .SiconContainer {
-    margin-top: 1rem;
-  }
-}
-
-.dsflex {
-  display: flex;
-  flex-direction: row;
-}
-@media (max-width: 450px) {
-  .dsflex {
-    flex-direction: column;
-  }
-}
-
-.Sicon {
-  width: 50px;
-}
-.Sicon img {
-  width: 100%;
-}
-@media (max-width: 449px) {
-  .Sicon {
-    margin-top: 0.2rem;
-  }
-}
-
-.experince {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.textContain {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-@media (max-width: 449px) {
-  .textContain {
-    margin-top: 1rem;
-    height: auto;
-  }
-}
-
-.aboutswiper {
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
-}
-
-.about-swiper-slide {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
-}
-
-.AboutswiperContainer {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  padding-inline-start: 5vw;
-}
-@media (max-width: 449px) {
-  .AboutswiperContainer {
-    padding-inline-start: 0vw;
-  }
-}
-
-.nameofEx {
-  color: #439299;
-  margin: 1rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.h2 {
-  font-weight: bold;
-}
-
-.EXcard {
-  margin: 1rem;
-  background: black;
-  color: white;
-  border-radius: 5px;
-  width: 40vw;
-  padding: 1.5rem;
-}
-@media (max-width: 450px) {
-  .EXcard {
-    width: 70vw;
-  }
-}
-
-.tasks {
-  font-weight: bold;
-  color: #439299;
-  font-size: 1.1rem;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-.overlayTags {
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-@media (max-width: 992px) {
-  .overlayTags .name {
-    margin-top: 0.3rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .pageContainer {
-    flex-direction: column-reverse;
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Plus Jakarta Sans;
   transition: all 0.5s;
-  accent-color: #439299;
+  accent-color: #ab8d60;
 }
 
 a {
@@ -223,7 +18,7 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #313c4e;
+  background-color: #282015;
 }
 
 ::-webkit-scrollbar {
@@ -231,7 +26,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #439299;
+  background-color: #ab8d60;
   border-radius: 2px;
 }
 
@@ -248,7 +43,7 @@ body {
 }
 
 .navbar {
-  background: white !important;
+  background: #fffcf6 !important;
 }
 
 .fs-8 {
@@ -260,34 +55,13 @@ body {
   }
 }
 
-.active {
-  position: relative;
-  z-index: 2;
-}
-.active::after {
-  content: " ";
-  left: 0px;
-  bottom: -2px;
-  width: 100%;
-  height: 310%;
-  border-radius: 10px;
-  background: #439299;
-  z-index: -1;
-  position: absolute;
-}
-@media (max-width: 991px) {
-  .active {
-    display: none;
-  }
-}
-
 .navbar-brand {
   font-size: 2rem;
-  color: white;
+  color: #fffcf6;
   font-weight: bold;
 }
 .navbar-brand:hover {
-  color: white !important;
+  color: #fffcf6 !important;
 }
 @media (max-width: 991px) {
   .navbar-brand {
@@ -300,7 +74,7 @@ body {
   border-radius: 50px;
 }
 .navBtn:hover {
-  color: white;
+  color: #fffcf6;
   background-color: #282015;
 }
 
@@ -342,7 +116,7 @@ body {
 }
 .swiper-slide h2 {
   font-size: 5rem;
-  color: white;
+  color: #fffcf6;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -399,11 +173,11 @@ body {
 }
 .AboutMe .bluredBlock h1 {
   font-size: 2rem;
-  color: white;
+  color: #fffcf6;
   font-weight: bold;
 }
 .AboutMe .bluredBlock p {
-  color: white;
+  color: #fffcf6;
   font-size: 1.5rem;
 }
 @media (max-width: 991px) {
@@ -417,7 +191,7 @@ body {
   padding: 5vh 0vw;
 }
 .MyWork h2 {
-  color: white;
+  color: #fffcf6;
   font-size: 3rem;
   font-weight: bolder;
 }
@@ -427,7 +201,7 @@ body {
   }
 }
 .MyWork p {
-  color: white;
+  color: #fffcf6;
   font-size: 1rem;
 }
 .MyWork .MyWorkSwiper {
@@ -446,7 +220,7 @@ body {
   background: url("../imgs/MusicDisc.png") center/contain no-repeat;
   transition: left 0.5s;
   z-index: -1;
-  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.8156862745));
+  filter: drop-shadow(0px 5px 5px rgba(40, 32, 21, 0.3));
 }
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper .swiper-slide-active::after {
@@ -504,7 +278,7 @@ body {
 .MyWork .MyWorkSwiper .swiper-slide .progress-bar {
   width: 30vw;
   height: 7px;
-  background-color: rgba(255, 255, 255, 0.7725490196);
+  background-color: rgba(255, 252, 246, 0.3);
   overflow: hidden;
   cursor: pointer;
 }
@@ -515,7 +289,7 @@ body {
 }
 .MyWork .MyWorkSwiper .swiper-slide .progress {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6784313725);
+  background-color: rgba(40, 32, 21, 0.3);
   width: 0;
   position: relative;
 }
@@ -524,7 +298,7 @@ body {
   border: none;
   border-radius: 50%;
   font-size: 16px;
-  background-color: rgba(230, 230, 230, 0.5137254902);
+  background-color: rgba(255, 252, 246, 0.4);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -539,7 +313,7 @@ body {
   }
 }
 .MyWork .MyWorkSwiper .swiper-slide .play-button:hover {
-  background: rgba(255, 255, 255, 0.6352941176);
+  background: rgba(255, 252, 246, 0.3);
 }
 .MyWork .MyWorkSwiper .swiper-slide .play-button img {
   width: 50%;
@@ -580,7 +354,7 @@ body {
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background-color: rgba(0, 0, 0, 0.3568627451);
+  background-color: rgba(40, 32, 21, 0.4);
 }
 .musicVedio .swiper-slide iframe,
 .musicVedio .swiper-slide img {
@@ -592,11 +366,11 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: white;
+  color: #fffcf6;
 }
 
 .title {
-  color: white;
+  color: #fffcf6;
   font-weight: bolder;
   font-size: 3rem;
   text-align: center;
@@ -647,7 +421,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f6e8c9;
+  color: #eed9ab;
   font-size: 2rem;
   border-radius: 10px;
   font-weight: bold;
@@ -715,7 +489,7 @@ body {
   opacity: 0;
 }
 .SERVICES .swiper-slide .whiteShade {
-  background: rgba(255, 255, 255, 0.368627451);
+  background: rgba(255, 252, 246, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -728,7 +502,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 .SERVICES .swiper-slide .title {
-  color: #000000;
+  color: #282015;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -780,7 +554,7 @@ body {
 }
 .priceList a {
   background: #282015;
-  color: white;
+  color: #fffcf6;
   transition: all 0.3s;
   border-radius: 50px;
   padding: 10px 100px;
@@ -791,7 +565,7 @@ body {
 }
 .priceList a:hover {
   transition: all 0.3s;
-  background: white;
+  background: #fffcf6;
   color: #282015;
 }
 @media (max-width: 449px) {
@@ -870,7 +644,7 @@ body {
 }
 .contactUs .submitBtn {
   background: #282015;
-  color: white;
+  color: #fffcf6;
   border-radius: 14px;
   margin-top: 1.3rem;
   width: 100%;
@@ -891,7 +665,7 @@ body {
 }
 
 footer {
-  background: white;
+  background: #fffcf6;
   padding: 5vw;
 }
 footer .socialIcons {
@@ -911,7 +685,7 @@ footer .socialIcons a img {
 }
 footer .socialIcons a:hover {
   filter: invert(1);
-  background: #a1b9c2;
+  background: rgba(238, 217, 171, 0.3);
 }
 footer .logo {
   width: 10vw;
