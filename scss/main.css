@@ -363,6 +363,9 @@ body {
   width: 100%;
   height: 31vw;
 }
+.MyWork .MyWorkSwiper .swiper-wrapper {
+  padding-bottom: 5vh;
+}
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper {
     height: 55vw;
@@ -533,7 +536,11 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #fffcf6;
+  color: #ab8d60;
+}
+
+.swiper-pagination {
+  color: #ab8d60;
 }
 
 .title {

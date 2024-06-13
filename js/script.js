@@ -4,7 +4,10 @@ const OurTeam = new Swiper("#header", {
 
   spaceBetween: 0,
   lazy: true,
- 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 const playButton = document.querySelector(".play-button");
@@ -61,7 +64,10 @@ var swiper = new Swiper(".MyWorkSwiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   lazy: true,
-
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -84,14 +90,18 @@ var swiper = new Swiper(".MusicVediosSwiper", {
     slideShadows: true,
   },
   grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 var swiper = new Swiper(".projectsSwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   // Responsive breakpoints
   breakpoints: {
     // when window width is <= 499px
@@ -114,9 +124,10 @@ document.addEventListener("DOMContentLoaded", function () {
     grid: {
       rows: 2,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+ 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     spaceBetween: 30,
     breakpoints: {

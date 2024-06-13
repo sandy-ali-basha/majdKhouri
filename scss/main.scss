@@ -327,10 +327,12 @@ $slideSize:28vw;
 
   .MyWorkSwiper {
     width: 100%;
+    .swiper-wrapper{
+      padding-bottom: 5vh;
+    }
     height: calc($slideSize + 3vw);
     @include media("<phone"){
       height: 55vw;
-      
     }
     .swiper-slide-active {
       position: relative;
@@ -488,8 +490,11 @@ $slideSize:28vw;
 .swiper-button-next,
 .swiper-button-prev {
   &::after {
-    color: $white;
+    color: $brown;
   }
+}
+.swiper-pagination{
+  color: $brown;
 }
 .title {
   color: $white;
