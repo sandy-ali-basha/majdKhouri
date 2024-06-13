@@ -4,10 +4,7 @@ const OurTeam = new Swiper("#header", {
 
   spaceBetween: 0,
   lazy: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+ 
 });
 
 const playButton = document.querySelector(".play-button");
@@ -95,7 +92,6 @@ var swiper = new Swiper(".projectsSwiper", {
     clickable: true,
   },
   spaceBetween: 20,
-  autoplay: true,
 
   // Responsive breakpoints
   breakpoints: {
@@ -112,7 +108,7 @@ var swiper = new Swiper(".projectsSwiper", {
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".SERVICESSwiper", {
-    autoplay: true,
+
     grid: {
       rows: 2,
     },
