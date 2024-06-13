@@ -480,6 +480,7 @@ $slideSize:28vw;
         border-radius: 10px;
         font-weight: bold;
         aspect-ratio: 9/16;
+        text-align: center;
         @include media("<tablet") {
           height: 40vh;
         }

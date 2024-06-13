@@ -541,6 +541,7 @@ body {
   border-radius: 10px;
   font-weight: bold;
   aspect-ratio: 9/16;
+  text-align: center;
 }
 @media (max-width: 991px) {
   .projects .projectsSwiper .swiper-slide .slide-content {
