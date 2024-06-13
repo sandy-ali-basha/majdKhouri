@@ -87,7 +87,6 @@ var swiper = new Swiper(".MusicVediosSwiper", {
     slideShadows: true,
   },
   grabCursor: true,
-  autoplay: true,
 });
 
 var swiper = new Swiper(".projectsSwiper", {
