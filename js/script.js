@@ -63,7 +63,11 @@ var swiper = new Swiper(".MyWorkSwiper", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  autoplay: true,
+  lazy: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
