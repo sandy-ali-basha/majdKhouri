@@ -292,7 +292,7 @@ body {
 }
 .MyWork .MyWorkSwiper {
   width: 100%;
-  height: 33vw;
+  height: 25vw;
 }
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper {
@@ -304,8 +304,8 @@ body {
 }
 .MyWork .MyWorkSwiper .swiper-slide-active::after {
   content: " ";
-  width: 30vw;
-  height: 30vw;
+  width: 22vw;
+  height: 22vw;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -316,8 +316,8 @@ body {
 }
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper .swiper-slide-active::after {
-    width: 50vw;
-    height: 50vw;
+    width: 42vw;
+    height: 42vw;
   }
 }
 .MyWork .MyWorkSwiper .swiper-slide-active:hover::after {
@@ -336,27 +336,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30vw;
-  height: 30vw;
+  width: 22vw;
+  height: 22vw;
   position: relative;
 }
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper .swiper-slide {
-    width: 45vw;
-    height: 45vw;
+    width: 37vw;
+    height: 37vw;
   }
 }
 .MyWork .MyWorkSwiper .swiper-slide .bg {
   border-radius: 20px;
-  width: 30vw;
-  height: 30vw;
+  width: 22vw;
+  height: 22vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper .swiper-slide .bg {
-    width: 45vw;
-    height: 45vw;
+    width: 37vw;
+    height: 37vw;
   }
 }
 .MyWork .MyWorkSwiper .swiper-slide .audio-player {
@@ -368,7 +368,7 @@ body {
   left: 2vw;
 }
 .MyWork .MyWorkSwiper .swiper-slide .progress-bar {
-  width: 26vw;
+  width: 18vw;
   height: 7px;
   background-color: rgba(255, 252, 246, 0.59);
   overflow: hidden;
@@ -377,7 +377,7 @@ body {
 }
 @media (max-width: 449px) {
   .MyWork .MyWorkSwiper .swiper-slide .progress-bar {
-    width: 41vw;
+    width: 33vw;
   }
 }
 .MyWork .MyWorkSwiper .swiper-slide .progress {
@@ -659,12 +659,11 @@ body {
 .priceList {
   height: 60vh;
   background: url("../imgs/order price list.png") center/cover no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 5vw 5vw;
+}
+.priceList .container {
   position: relative;
   margin-top: 5rem;
+  padding: 5vw 5vw;
 }
 @media (max-width: 991px) {
   .priceList {
@@ -683,7 +682,7 @@ body {
   padding: 10px 100px;
   border: none;
   outline: none;
-  font-weight: light;
+  font-weight: 300;
   font-size: 2rem;
 }
 .priceList a:hover {
@@ -784,7 +783,7 @@ body {
 .contactUs .map {
   height: 60vh;
   border-radius: 10px;
-  width: 90vw !important;
+  width: 100%;
 }
 
 footer {

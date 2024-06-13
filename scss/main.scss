@@ -41,19 +41,19 @@ a {
 .darkMode {
   background: $text_primary;
   .priceList {
-    h3,
-    h5 {
-      color: $white !important;
-    }
-    a {
-      background: $white;
-      color: $text_primary;
-      &:hover {
-        transition: all 0.3s;
-        color: $white;
-        background: $text_primary;
+      h3,
+      h5 {
+        color: $white !important;
       }
-    }
+      a {
+        background: $white;
+        color: $text_primary;
+        &:hover {
+          transition: all 0.3s;
+          color: $white;
+          background: $text_primary;
+        }
+      }
   }
   .navbar {
     background: $text_primary !important;
@@ -236,6 +236,7 @@ body {
     }
   }
 }
+$slideSize:22vw;
 .MyWork {
   text-align: center;
   padding: 5vh 0vw;
@@ -251,9 +252,10 @@ body {
     color: $white;
     font-size: 1rem;
   }
+
   .MyWorkSwiper {
     width: 100%;
-    height: 33vw;
+    height: calc($slideSize + 3vw);
     @include media("<phone"){
       height: 55vw;
       
@@ -263,8 +265,8 @@ body {
 
       &::after {
         content: " ";
-        width: 30vw;
-        height: 30vw;
+        width: $slideSize;
+        height: $slideSize;
         position: absolute;
         left: 0px;
         top: 0px;
@@ -273,8 +275,8 @@ body {
         z-index: -1;
         filter: drop-shadow(0px 5px 5px rgba($text_primary, 0.3));
         @include media("<phone") {
-          width: 50vw;
-          height: 50vw;
+          width: calc($slideSize + 20vw);
+          height: calc($slideSize + 20vw);
         }
       }
     }
@@ -294,22 +296,22 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 30vw;
-      height: 30vw;
+      width: $slideSize;
+      height: $slideSize;
       position: relative;
       @include media("<phone") {
-        width: 45vw;
-        height: 45vw;
+        width: calc($slideSize + 15vw);
+        height: calc($slideSize + 15vw);
         }
         
         .bg {
         border-radius: 20px;
-        width: 30vw;
-        height: 30vw;
+        width: $slideSize;
+        height: $slideSize;
         object-fit: cover;
         @include media("<phone") {
-          width: 45vw;
-          height: 45vw;
+          width: calc($slideSize + 15vw);
+          height: calc($slideSize + 15vw);
         }
       }
 
@@ -323,14 +325,14 @@ body {
       }
 
       .progress-bar {
-        width: 26vw;
+        width: calc($slideSize  - 4vw);
         height: 7px;
         background-color: rgb(255 252 246 / 59%);
         overflow: hidden;
         cursor: pointer;
         border-radius: 20px;
         @include media("<phone") {
-          width: 41vw;
+          width: calc($slideSize + 11vw)
         }
       }
       .progress {
@@ -587,12 +589,12 @@ body {
 .priceList {
   height: 60vh;
   background: url("../imgs/order\ price\ list.png") center/cover no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 5vw 5vw;
-  position: relative;
-  margin-top: 5rem;
+  .container{
+    position: relative;
+    margin-top: 5rem;
+    padding: 5vw 5vw;
+    
+  }
   @include media("<tablet") {
     justify-content: space-evenly;
     flex-direction: column;
@@ -613,7 +615,7 @@ body {
     padding: 10px 100px;
     border: none;
     outline: none;
-    font-weight: light;
+    font-weight: 300;
     font-size: 2rem;
     @include media("<phone") {
       font-size: 1rem;
@@ -697,7 +699,7 @@ body {
   .map {
     height: 60vh;
     border-radius: 10px;
-    width: 90vw !important;
+    width: 100%;
   }
 }
 
