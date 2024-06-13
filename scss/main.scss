@@ -254,7 +254,7 @@ body {
   .MyWorkSwiper {
     width: 100%;
     height: 33vw;
-    @include mdeia("<phone"){
+    @include media("<phone"){
       height: 55vw;
       
     }
