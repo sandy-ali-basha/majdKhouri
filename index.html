@@ -28,7 +28,18 @@
     />
     <title>Majd Khouri</title>
   </head>
-  <body>
+  <body class="position-relative">
+    <!-- //! new  -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <img src="./imgs/music-anim.gif" class="div-animation" alt="loader" />
+      </div>
+    </div>
+    <!-- !new  -->
     <!--//* nav  -->
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand d-md-none d-block">
@@ -60,10 +71,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
+          <li class="nav-item link">
             <a class="nav-link navBtn mx-1 mx-md-2" href="#partner">PARTNERS</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item link">
             <a class="nav-link navBtn mx-1 mx-md-2" href="#contactMe"
               >contact me</a
             >
@@ -119,21 +130,22 @@
     </header>
     <!--//* AboutMe -->
     <section
-      class="AboutMe"
       style="background: url(./imgs/personImage.jpg) fixed center/cover no-repeat;"
     >
-      <div class="bluredBlock" data-aos="fade-left">
-        <h1 class="title">Majd Khouri.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem
-          enim sint quaerat odio numquam quas pariatur. Maxime odit voluptates
-          minus facere sapiente dolorum quia debitis dolorem, ducimus dolore
-          reiciendis.
-        </p>
+      <div class="AboutMe container">
+        <div class="bluredBlock" data-aos="fade-left">
+          <h1 class="title">Majd Khouri.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+            voluptatem enim sint quaerat odio numquam quas pariatur. Maxime odit
+            voluptates minus facere sapiente dolorum quia debitis dolorem,
+            ducimus dolore reiciendis.
+          </p>
+        </div>
       </div>
     </section>
     <!-- //* MyWork -->
-    <div class="background ">
+    <div class="background " id="works">
       <section class="MyWork container">
         <h2 data-aos="fade-in">My work</h2>
         <p data-aos="fade-in">Some quotes fro m our happy customers</p>
@@ -324,81 +336,84 @@
           </div>
         </div>
       </section>
-      <section class="Partners px-2 px-md-5 ">
-        <h2 class="title pb-5" data-aos="fade-in">Partners of success</h2>
-        <div
-          class="d-flex justify-content-center align-items-center gap-5 flex-wrap px-2 px-md-5"
-        >
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (1).png"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (2).png"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (4).svg"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (5).svg"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (1).webp"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (3).png"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (4).png"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (1).svg"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (2).svg"
-            class="partner-logo"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            data-aos="flip-right"
-            src="./imgs/logos/logo (3).svg"
-            class="partner-logo"
-            alt=""
-          />
+      <!-- //* partner -->
+      <section class="Partners" id="partner">
+        <div class="container">
+          <h2 class="title pb-5" data-aos="fade-in">Partners of success</h2>
+          <div
+            class="d-flex justify-content-center align-items-center gap-5 flex-wrap"
+          >
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (1).png"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (2).png"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (4).svg"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (5).svg"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (1).webp"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (3).png"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (4).png"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (1).svg"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (2).svg"
+              class="partner-logo"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              data-aos="flip-right"
+              src="./imgs/logos/logo (3).svg"
+              class="partner-logo"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </div>
@@ -423,7 +438,7 @@
               Slide
             </div>
           </div>
-         
+
           <div class="swiper-slide">
             <div
               class="slide-content"
@@ -432,7 +447,7 @@
               Slide
             </div>
           </div>
-         
+
           <div class="swiper-slide">
             <div
               class="slide-content"
@@ -441,7 +456,7 @@
               Slide
             </div>
           </div>
-         
+
           <div class="swiper-slide">
             <div
               class="slide-content"
@@ -450,7 +465,7 @@
               Slide
             </div>
           </div>
-         
+
           <div class="swiper-slide">
             <div
               class="slide-content"
@@ -459,7 +474,6 @@
               Slide
             </div>
           </div>
-         
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -477,7 +491,7 @@
       </div>
     </section>
     <!-- SERVICES -->
-    <section class="SERVICES container">
+    <section class="SERVICES container" id="services">
       <h2 data-aos="fade-in">SERVICES</h2>
       <div class="swiper SERVICESSwiper mt-5 pb-5">
         <div class="swiper-wrapper">
@@ -836,7 +850,7 @@
       </div>
     </section>
     <!-- contactUs -->
-    <section class="contactUs ">
+    <section class="contactUs " id="contactMe">
       <div class="container">
         <div class="bg"></div>
         <div class="row">
@@ -951,6 +965,7 @@
     ></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
