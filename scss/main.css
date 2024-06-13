@@ -524,7 +524,6 @@ body {
 .projects .projectsSwiper {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 80vh;
 }
 @media (max-width: 449px) {
   .projects .projectsSwiper {
@@ -533,7 +532,7 @@ body {
     padding-right: 20vw;
   }
 }
-.projects .projectsSwiper .swiper-slide {
+.projects .projectsSwiper .swiper-slide .slide-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -541,10 +540,10 @@ body {
   font-size: 2rem;
   border-radius: 10px;
   font-weight: bold;
-  height: 70vh;
+  aspect-ratio: 9/16;
 }
 @media (max-width: 991px) {
-  .projects .projectsSwiper .swiper-slide {
+  .projects .projectsSwiper .swiper-slide .slide-content {
     height: 40vh;
   }
 }

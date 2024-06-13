@@ -91,17 +91,17 @@ var swiper = new Swiper(".projectsSwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  spaceBetween: 20,
+  spaceBetween: 30,
 
   // Responsive breakpoints
   breakpoints: {
     // when window width is <= 499px
     499: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     // when window width is <= 999px
     999: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 });
