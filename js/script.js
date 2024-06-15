@@ -97,7 +97,7 @@ var swiper = new Swiper(".MusicVediosSwiper", {
 });
 
 var swiper = new Swiper(".projectsSwiper", {
-
+  centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

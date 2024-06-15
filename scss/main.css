@@ -534,8 +534,17 @@ body {
      object-fit: cover;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgb(255, 255, 255);
+  aspect-ratio: 4/4;
+  padding: 10px;
+  width: auto !important;
+  border-radius: 50px;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
+  font-size: 1.5rem !important;
   color: #ab8d60;
 }
 
@@ -597,8 +606,22 @@ body {
   }
 }
 .projects .projectsSwiper {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
+}
+.projects .projectsSwiper .swiper-wrapper {
+  padding: 2rem;
+}
+.projects .projectsSwiper .swiper-slide-active {
+  transform: scale(1.1);
+  /* Adjust scale value as needed */
+}
+.projects .projectsSwiper .swiper-slide-active .slide-content {
+  border: 2px solid #ffd494 !important;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2862745098);
+}
+.projects .projectsSwiper .swiper-slide-active .slide-content::after {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 @media (max-width: 449px) {
   .projects .projectsSwiper {
@@ -606,6 +629,24 @@ body {
     padding-left: 20vw;
     padding-right: 20vw;
   }
+}
+.projects .projectsSwiper .swiper-slide {
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.projects .projectsSwiper .swiper-slide .slide-content {
+  border: 2px solid transparent;
+  background-image: linear-gradient(180deg, #0931b7, #082eaa);
+  position: relative;
+}
+.projects .projectsSwiper .swiper-slide .slide-content::after {
+  border-radius: 10px;
+  content: " ";
+  left: 0px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
 .projects .projectsSwiper .swiper-slide .slide-content {
   display: flex;
@@ -653,8 +694,13 @@ body {
 }
 .SERVICES .swiper-slide {
   border-radius: 10px;
-  transition: all 1s ease-in-out;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.08);
   position: relative;
+}
+.SERVICES .swiper-slide:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
 }
 .SERVICES .swiper-slide .front,
 .SERVICES .swiper-slide .back {
@@ -663,7 +709,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  transition: all 1s ease-in-out;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   height: 100%;
   position: absolute;
   left: 0px;
@@ -677,7 +723,7 @@ body {
   text-align: center;
 }
 .SERVICES .swiper-slide:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .SERVICES .swiper-slide:hover .back {
   opacity: 1;
