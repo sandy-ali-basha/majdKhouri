@@ -196,11 +196,11 @@ $(document).on("mousemove", function(e) {
     mouseY = e.clientY;
 });
 
-$("button, a").on("mouseenter", function() {
+$("button, a, .swiper-button-next, .swiper-button-prev").on("mouseenter", function() {
     cursor.addClass("active");
     follower.addClass("active");
 });
-$("button, a").on("mouseleave", function() {
+$("button, a, .swiper-button-next, .swiper-button-prev").on("mouseleave", function() {
     cursor.removeClass("active");
     follower.removeClass("active");
 });
