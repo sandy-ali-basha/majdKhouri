@@ -99,6 +99,15 @@ var swiper = new Swiper(".MusicVediosSwiper", {
 
 var swiper = new Swiper(".projectsSwiper", {
   centeredSlides: true,
+  effect: "coverflow",
+
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
