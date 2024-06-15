@@ -61,7 +61,7 @@ audio.addEventListener("ended", function () {
 var swiper = new Swiper(".MyWorkSwiper", {
   effect: "coverflow",
   grabCursor: true,
-  centeredSlides: true,
+  // centeredSlides: true, // Uncomment this line
   slidesPerView: "auto",
   lazy: true,
   navigation: {
@@ -76,6 +76,7 @@ var swiper = new Swiper(".MyWorkSwiper", {
     slideShadows: true,
   },
 });
+
 
 var swiper = new Swiper(".MusicVediosSwiper", {
   effect: "coverflow",
