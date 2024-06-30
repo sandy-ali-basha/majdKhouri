@@ -13,6 +13,41 @@
   accent-color: #ab8d60;
 }
 
+.swiper {
+  padding-bottom: 30px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ab8d60 !important;
+}
+
+.swiper-pagination-bullet {
+  transform: scale(1.4);
+  margin-top: 2rem !important;
+}
+
+.MyWork .MyWorkSwiper .swiper-slide .bg {
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2862745098);
+}
+.MyWork .MyWorkSwiper .swiper-slide .bg::after {
+  border-radius: 20px;
+  content: " ";
+  left: 0px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.MyWork .MyWorkSwiper .swiper-slide-active .bg {
+  box-shadow: none;
+  border: 2px solid #ffd494 !important;
+}
+.MyWork .MyWorkSwiper .swiper-slide-active .bg::after {
+  display: none;
+}
+
 .darkModeButton {
   background: none;
   border: none;
@@ -96,6 +131,11 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 992px) {
+  .spinner-wrapper {
+    display: none;
+  }
+}
 .spinner-wrapper .spinner {
   width: 30%;
 }
@@ -122,6 +162,10 @@ a {
 
 .darkMode {
   background: #282015;
+}
+.darkMode .swiper-button-next,
+.darkMode .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.315);
 }
 .darkMode .priceList h3,
 .darkMode .priceList h5 {
@@ -262,6 +306,25 @@ body {
   height: 100%;
 }
 
+.arrow {
+  position: absolute;
+  left: calc(50% - 2.5vw);
+  width: 5vw;
+  bottom: 10vh;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
 .swiper-slide {
   aspect-ratio: 16/9;
   height: 100%;
@@ -283,7 +346,7 @@ body {
 }
 
 .AboutMe {
-  aspect-ratio: 19/9;
+  height: 95vh;
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -302,7 +365,7 @@ body {
   justify-content: center;
   padding: 20px;
   gap: 10px;
-  width: 40%;
+  width: 45%;
   background: rgba(0, 0, 0, 0.53);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -331,14 +394,16 @@ body {
   color: #fffcf6;
   font-weight: bold;
 }
-.AboutMe .bluredBlock p {
+.AboutMe .bluredBlock .p {
   color: #fffcf6;
-  font-size: 1.2rem;
   height: 100%;
-  overflow-y: scroll;
+}
+.AboutMe .bluredBlock .p div {
+  font-size: 1.2rem;
+  margin-top: 5px;
 }
 @media (max-width: 991px) {
-  .AboutMe .bluredBlock p {
+  .AboutMe .bluredBlock .p div {
     font-size: 1rem;
   }
 }
@@ -363,7 +428,6 @@ body {
 }
 .MyWork .MyWorkSwiper {
   width: 100%;
-  height: 31vw;
 }
 .MyWork .MyWorkSwiper .swiper-wrapper {
   padding-bottom: 5vh;
@@ -376,83 +440,58 @@ body {
 .MyWork .MyWorkSwiper .swiper-slide-active {
   position: relative;
 }
-.MyWork .MyWorkSwiper .swiper-slide-active::after {
+.MyWork .MyWorkSwiper .swiper-slide-active .bg::after {
   content: " ";
-  width: 28vw;
-  height: 28vw;
+  width: 95%;
+  aspect-ratio: 1;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 5px;
   background: url("../imgs/MusicDisc.png") center/contain no-repeat;
-  transition: left 0.5s;
+  transition: left 0.8s;
   z-index: -1;
   filter: drop-shadow(0px 5px 5px rgba(40, 32, 21, 0.3));
 }
-@media (max-width: 449px) {
-  .MyWork .MyWorkSwiper .swiper-slide-active::after {
-    width: 48vw;
-    height: 48vw;
-  }
+.MyWork .MyWorkSwiper .swiper-slide-active .bg:hover::after {
+  left: 40%; /* Move the pseudo-element when the parent is hovered */
 }
-.MyWork .MyWorkSwiper .swiper-slide-active:hover::after {
-  left: -13vw; /* Move the pseudo-element when the parent is hovered */
-}
-@media (max-width: 449px) {
-  .MyWork .MyWorkSwiper .swiper-slide-active:hover::after {
-    left: -20vw;
-  }
-}
-.MyWork .MyWorkSwiper .swiper-slide-active.rotate::after {
+.MyWork .MyWorkSwiper .swiper-slide-active .bg.rotate::after {
   animation: rotate 6s linear infinite;
 }
 .MyWork .MyWorkSwiper .swiper-slide {
-  margin-top: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28vw;
-  height: 28vw;
+  flex-direction: column;
   position: relative;
-}
-@media (max-width: 449px) {
-  .MyWork .MyWorkSwiper .swiper-slide {
-    width: 43vw;
-    height: 43vw;
-  }
 }
 .MyWork .MyWorkSwiper .swiper-slide .bg {
   border-radius: 20px;
-  width: 28vw;
-  height: 28vw;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.MyWork .MyWorkSwiper .swiper-slide .bg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media (max-width: 449px) {
-  .MyWork .MyWorkSwiper .swiper-slide .bg {
-    width: 43vw;
-    height: 43vw;
-  }
 }
 .MyWork .MyWorkSwiper .swiper-slide .audio-player {
   display: flex;
   align-items: center;
   gap: 10px;
-  position: absolute;
-  bottom: -16px;
-  left: 2vw;
+  margin-top: 5px;
+  width: 100%;
 }
 .MyWork .MyWorkSwiper .swiper-slide .progress-bar {
-  width: 24vw;
+  width: 100%;
+  margin: 0 2vw;
   height: 7px;
   background-color: rgba(255, 252, 246, 0.59);
   overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
-}
-@media (max-width: 449px) {
-  .MyWork .MyWorkSwiper .swiper-slide .progress-bar {
-    width: 39vw;
-  }
 }
 .MyWork .MyWorkSwiper .swiper-slide .progress {
   height: 100%;
@@ -485,6 +524,11 @@ body {
 .MyWork .MyWorkSwiper .swiper-slide .play-button img {
   width: 50%;
 }
+.MyWork .MyWorkSwiper .swiper-slide .disc {
+  color: white;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
 
 @keyframes rotate {
   from {
@@ -506,27 +550,33 @@ body {
     height: 80vh;
   }
 }
+.musicVedio .swiper-slide-active {
+  box-shadow: none;
+}
 .musicVedio .swiper-slide-active::after {
-  content: none !important;
+  display: none;
 }
 .musicVedio .swiper-slide {
   width: 40vw;
   aspect-ratio: 16/9;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2862745098);
+}
+.musicVedio .swiper-slide::after {
+  border-radius: 10px;
+  content: " ";
+  left: 0px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 449px) {
   .musicVedio .swiper-slide {
     width: 50vw;
   }
-}
-.musicVedio .swiper-slide::after {
-  content: " ";
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background-color: rgba(40, 32, 21, 0.4);
 }
 .musicVedio .swiper-slide iframe,
 .musicVedio .swiper-slide img {
@@ -542,7 +592,12 @@ body {
   aspect-ratio: 4/4;
   padding: 10px;
   width: auto !important;
-  border-radius: 50px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1);
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -611,26 +666,50 @@ body {
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
+.projects .projectsSwiper .slide-content {
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2862745098);
+}
+.projects .projectsSwiper .slide-content::after {
+  border-radius: 10px;
+  content: " ";
+  left: 0px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
 .projects .projectsSwiper .swiper-slide-active {
-  transform: scale(1.1);
   /* Adjust scale value as needed */
 }
 .projects .projectsSwiper .swiper-slide-active .slide-content {
-  border: 2px solid #ffd494 !important;
-  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2862745098);
+  transform: scale(1.1);
+  box-shadow: none;
 }
 .projects .projectsSwiper .swiper-slide-active .slide-content::after {
-  background-color: rgba(0, 0, 0, 0) !important;
+  display: none;
+}
+.projects .projectsSwiper .desc {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media (max-width: 449px) {
   .projects .projectsSwiper {
     height: 50vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
   }
 }
 .projects .projectsSwiper .swiper-slide {
-  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 25%;
+}
+@media (max-width: 449px) {
+  .projects .projectsSwiper .swiper-slide {
+    width: 40%;
+  }
 }
 .projects .projectsSwiper .swiper-slide .slide-content {
   border: 2px solid transparent;
@@ -659,6 +738,11 @@ body {
   text-align: center;
 }
 @media (max-width: 991px) {
+  .projects .projectsSwiper .swiper-slide .slide-content {
+    height: 60vh;
+  }
+}
+@media (max-width: 449px) {
   .projects .projectsSwiper .swiper-slide .slide-content {
     height: 40vh;
   }
@@ -695,6 +779,7 @@ body {
   border-radius: 10px;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ffd494 !important;
   position: relative;
 }
 .SERVICES .swiper-slide:hover {
@@ -714,12 +799,17 @@ body {
   left: 0px;
   top: 0px;
 }
+.SERVICES .swiper-slide .front {
+  margin-bottom: 1rem;
+}
 .SERVICES .swiper-slide .back {
+  align-items: flex-start;
   opacity: 0;
   padding: 1rem;
 }
+.SERVICES .swiper-slide .back .title,
 .SERVICES .swiper-slide .back p {
-  text-align: center;
+  margin-bottom: 0px !important;
 }
 .SERVICES .swiper-slide:hover {
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -754,7 +844,6 @@ body {
   height: 30%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 1rem;
 }
 .SERVICES .swiper-slide .bg {
   width: 100%;
@@ -826,7 +915,7 @@ body {
 }
 .priceList .text h3 {
   color: #282015;
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -836,7 +925,7 @@ body {
   }
 }
 .priceList .text h5 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: light;
   color: #282015;
@@ -906,9 +995,13 @@ body {
   width: 100%;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 footer {
   background: #fffcf6;
-  padding: 5vw;
+  padding: 2vw;
 }
 footer .socialIcons {
   align-items: center;

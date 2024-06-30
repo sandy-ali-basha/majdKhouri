@@ -1,9 +1,22 @@
+$(document).ready(function () {
+  // Preloader
+  var preloaderFadeOutTime = 500;
+  function hidePreloader() {
+    var preloader = $(".spinner-wrapper");
+    preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+});
 const OurTeam = new Swiper("#header", {
   slidesPerView: "1",
   effect: "flip",
 
   spaceBetween: 0,
   lazy: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -61,9 +74,15 @@ audio.addEventListener("ended", function () {
 var swiper = new Swiper(".MyWorkSwiper", {
   effect: "coverflow",
   grabCursor: true,
-  // centeredSlides: true, // Uncomment this line
-  slidesPerView: "auto",
+  centeredSlides: true, // Unco mment this line
+  slidesPerView: "3",
+  initialSlide: 1,
+
   lazy: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -73,68 +92,78 @@ var swiper = new Swiper(".MyWorkSwiper", {
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
   },
 });
 
-
 var swiper = new Swiper(".MusicVediosSwiper", {
   effect: "coverflow",
-  grabCursor: false,
+  grabCursor: true,
   centeredSlides: true,
+  initialSlide: 1,
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
   },
-  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+// Function to pause all iframes
+function pauseAllVideos() {
+  document.querySelectorAll('.swiper-slide iframe').forEach(iframe => {
+    const src = iframe.src;
+    iframe.src = src; // Reset src to stop the video
+  });
+}
+
+// Add event listener to Swiper
+swiper.on('slideChange', function () {
+  pauseAllVideos();
 });
 
 var swiper = new Swiper(".projectsSwiper", {
   centeredSlides: true,
   effect: "coverflow",
-
+  initialSlide: 2, // Start from the third slide (index starts at 0)
   coverflowEffect: {
-    rotate: 20,
+    rotate: 30,
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is <= 499px
-    499: {
-      slidesPerView: 3,
-    spaceBetween: 10,
-    },
-    // when window width is <= 999px
-    999: {
-      slidesPerView: 4,
-  spaceBetween: 30,
-
-    },
-  },
-});
+  slidesPerView: 'auto',
+ });
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".SERVICESSwiper", {
-
     grid: {
       rows: 2,
     },
- 
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -160,57 +189,55 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-$(document).ready(function () {
-	// Preloader
-	var preloaderFadeOutTime = 500;
-	function hidePreloader() {
-		var preloader = $(".spinner-wrapper");
-		preloader.fadeOut(preloaderFadeOutTime);
-	}
-	hidePreloader();
-});
+
 
 var cursor = $(".cursor"),
-    follower = $(".cursor-follower");
+  follower = $(".cursor-follower");
 
 var posX = 0,
-    posY = 0;
+  posY = 0;
 
 var mouseX = 0,
-    mouseY = 0;
+  mouseY = 0;
 
 TweenMax.to({}, 0.016, {
   repeat: -1,
-  onRepeat: function() {
+  onRepeat: function () {
     posX += (mouseX - posX) / 9;
     posY += (mouseY - posY) / 9;
-    
+
     TweenMax.set(follower, {
-        css: {    
+      css: {
         left: posX - 12,
-        top: posY - 12
-        }
+        top: posY - 12,
+      },
     });
-    
+
     TweenMax.set(cursor, {
-        css: {    
+      css: {
         left: mouseX,
-        top: mouseY
-        }
+        top: mouseY,
+      },
     });
-  }
+  },
 });
 
-$(document).on("mousemove", function(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+$(document).on("mousemove", function (e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
 
-$("button, a, .swiper-button-next, .swiper-button-prev").on("mouseenter", function() {
+$("button, a, .swiper-button-next, .swiper-button-prev").on(
+  "mouseenter",
+  function () {
     cursor.addClass("active");
     follower.addClass("active");
-});
-$("button, a, .swiper-button-next, .swiper-button-prev").on("mouseleave", function() {
+  }
+);
+$("button, a, .swiper-button-next, .swiper-button-prev").on(
+  "mouseleave",
+  function () {
     cursor.removeClass("active");
     follower.removeClass("active");
-});
+  }
+);
